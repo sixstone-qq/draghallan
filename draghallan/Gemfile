@@ -45,3 +45,9 @@ group :development do
   gem 'spring'
 end
 
+# Deployment to Heroku
+group :production do
+  gem 'pg'
+  # Used by Heroku to serve static assets
+  gem 'rails_12factor'
+end
